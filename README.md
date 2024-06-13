@@ -32,13 +32,16 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 ---
 
 ## Installation
+
 > ### Default Install Path for All Users:
-> Place the `.cfg` files from `TF2-MASTERCLASS-CONFIG/scripts` in the following directory:
-> #### `\steamapps\common\Team Fortress 2\tf\cfg\`
+> #### 1. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/)
+> #### 2. Extract the `.cfg` files from `TF2-MASTERCLASS-CONFIG/scripts` in the following directory:
+> `\steamapps\common\Team Fortress 2\tf\cfg\`
 
 > ### Install Path for MasterConfig Users:
-> Place the `.cfg` files from `TF2-MASTERCLASS-CONFIG/scripts` in the following directory: 
-> #### `\steamapps\common\Team Fortress 2\tf\cfg\overrides`
+> #### 1. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/)
+> #### 2. Extract the `.cfg` files from `TF2-MASTERCLASS-CONFIG/scripts` in the following directory: 
+> `\steamapps\common\Team Fortress 2\tf\cfg\overrides`
 
 ---
 
