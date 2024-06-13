@@ -4,9 +4,7 @@ This project is a collection of advanced and customizable configuration scripts 
 
 To check if a server allows the wait function, type `sv_allow_wait_command` in console while connected to said server. The console will output either, 1, which means wait function is allowed, or 0, which means it is disabled.
 
----
-
-## Features
+# Features
 #### **Comprehensive Documentation**:
 > Each `.cfg` file includes detailed comments explaining what each bind and command does.
 
@@ -33,17 +31,15 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 > ##### -Auto Sap Bind
 > ##### -Medic Radar Bind
 
----
+# Installation
 
-## Installation
-
-### Windows 
+## Windows 
 1. Download and install [Python 3.0+](https://www.python.org/downloads/) for Windows.
 2. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest) of `install-tf2-masterclass-config.py`.
 3. Right Click `install-tf2-masterclass-config.py` > Open with > Python.
 4. Follow the installation prompts and enjoy!
 
-### Linux
+## Linux
 1. Install Python 3.0+ using your package manager. For example, on Debian-based systems:
     ```bash
     sudo apt update
@@ -59,7 +55,7 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
     ```
 4. Follow the installation prompts and enjoy!
 
-### Mac
+## Mac
 1. Install Python 3.0+ using Homebrew:
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -78,12 +74,8 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 > - You can alternatively perform a manual install using the latest "tf2-masterclass-config.zip"
 > - I however will not be provide any support for this method
 
----
-
-## Contributions
+# Contributions
 If you have a script or improvement you'd like to share, please submit a pull request or open an issue on GitHub.
 
----
-
-## Support
+# Support
 If you encounter any issues or have questions, feel free to open an issue on GitHub or reach out to the community for assistance.
