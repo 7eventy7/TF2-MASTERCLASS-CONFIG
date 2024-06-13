@@ -1,4 +1,4 @@
-# TF2-MASTERCLASS-CONFIG
+![cover](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/assets/75962770/e5e64cb6-9e99-4f14-9173-070a7dc0d1e2)
 
 This project is a collection of advanced and customizable configuration scripts designed to enhance your gameplay experience in Team Fortress 2. These scripts leverage the wait function, which means they are compatible primarily with Valve servers. Most community servers disable the wait function with the setting `sv_allow_wait_command 1`, which limits the usage of these scripts. 
 
