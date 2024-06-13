@@ -75,4 +75,5 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 > - I however will not be provide any support for this method
 
 # Contributions / Support
-If you encounter any issues, have questions, or have an improvement you'd like to share, please submit a pull request or open an issue.
+If you encounter any issues, have questions, or have an improvement you'd like to share:
+- please submit a pull request or open an issue on github.
