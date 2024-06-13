@@ -30,7 +30,7 @@ def display_startup_screen():
     print("="*70)
     print(" " * 20 + "TF2 MASTERCLASS CONFIG INSTALLER")
     print("="*70)
-    print(" " * 25 + "v2.0.1 -- June 13th, 2024")
+    print(" " * 25 + "v2.0.2 -- June 13th, 2024")
     print("="*70)
     print("\nThis script will help you install the TF2 Masterclass Config.")
     print("Please follow the instructions as prompted.\n")
@@ -88,11 +88,11 @@ def update_autoexec_cfg(destination_folder):
     
     print("="*70)
     print("\n3. Change crouch to 'CTRL' and crouch-jump to 'SHIFT'? (yes/no)\nDefault: \"CTRL\" - crouch & \"SHIFT\" - crouch-jump\nUser Input: (yes / no)")
-    swap_crouch = input("\nYour choice: ").strip().lower() == 'yes'
+    swap_crouch = input("\nYour choice: ").strip().lower() in ['yes', 'y']
     
     print("="*70)
     print("\n4. Disable the original cartoony look?\nDefault: \"NO\" - enabled\nUser Input: (yes / no)")
-    disable_cartoon = input("\nYour choice: ").strip().lower() == 'yes'
+    disable_cartoon = input("\nYour choice: ").strip().lower() in ['yes', 'y']
     
     print("="*70)
     print("\n5. Which first lenny shall be bound to '['?\nDefault: \"0\" - sadge\nUser Input: (0 thru 5)")
@@ -148,8 +148,8 @@ def prompt_for_changes(destination_folder):
     print("="*70)
     print(" " * 20 + "EXTRACTION SUCCESSFUL")
     print("="*70 + "\n")
-    make_changes = input("Would you like to make any changes to the .cfg scripts? (yes/no): ").strip().lower()
-    if make_changes == 'yes':
+    make_changes = input("Would you like to make any changes to the .cfg scripts? (yes/no): ").strip().lower() in ['yes', 'y']
+    if make_changes:
         update_autoexec_cfg(destination_folder)
     else:
         print("\nNo changes will be made to the .cfg scripts.")
@@ -161,7 +161,7 @@ def main():
         tf2_cfg_path = find_tf2_install_directory()
         
         # Ask the user if they use Mastercomfig
-        use_mastercomfig = input("Do you use Mastercomfig? (yes/no): ").strip().lower() == 'yes'
+        use_mastercomfig = input("Do you use Mastercomfig? (yes/no): ").strip().lower() in ['yes', 'y']
         if use_mastercomfig:
             destination_folder = tf2_cfg_path / "overrides"
         else:
