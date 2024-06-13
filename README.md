@@ -9,21 +9,27 @@ TF2-MASTERCLASS-CONFIG is a collection of advanced and customizable configuratio
 ---
 
 ## Features
-- **Comprehensive Documentation**: Each `.cfg` file includes detailed comments explaining what each bind and command does.
-- **Easy Personalization**: The documentation makes it easy for users to understand and customize their own settings.
-- **Extensively Tested**: All configurations have been thoroughly tested to ensure stability and performance.
-- **Included Commands/Binds:**
-  - Graphics Parameters
-  - Viewmodel Toggle
-  - Voice Chat Binds
-  - Text Chat Binds
-  - Kill Binds
-  - Loadout Selection Binds
-  - Build/Destroy Buildings Binds
-  - Sticky Spam Bind
-  - Quick Disguise Bind
-  - Auto Sap Bind
-  - Medic Radar Bind
+#### **Comprehensive Documentation**:
+> Each `.cfg` file includes detailed comments explaining what each bind and command does.
+  
+#### **Easy Personalization**:
+> The documentation makes it easy for users to understand and customize their own settings.
+  
+#### **Extensively Tested**:
+> All configurations have been thoroughly tested to ensure stability and performance.
+  
+#### **Included Commands/Binds:**
+> ##### -Graphics Parameters
+> ##### -Viewmodel Toggle
+> ##### -Voice Chat Binds
+> ##### -Text Chat Binds
+> ##### -Kill Binds
+> ##### -Loadout Selection Binds
+> ##### -Build/Destroy Buildings Binds
+> ##### -Sticky Spam Bind
+> ##### -Quick Disguise Bind
+> ##### -Auto Sap Bind
+> ##### -Medic Radar Bind
 
 ---
 
