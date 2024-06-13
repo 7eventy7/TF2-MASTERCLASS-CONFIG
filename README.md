@@ -9,9 +9,12 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 ## Features
 #### **Comprehensive Documentation**:
 > Each `.cfg` file includes detailed comments explaining what each bind and command does.
+
+#### **Easy Instlation**:
+> Installation is made simple through the use of a python script that automates the whole process.
   
-#### **Easy Personalization**:
-> The documentation makes it easy for users to understand and customize their own settings.
+#### **Streamlined Personalization**:
+> The installation process includes the options to change a few common configuration options.
   
 #### **Extensively Tested**:
 > All configurations have been thoroughly tested to ensure stability and performance.
@@ -21,6 +24,7 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 > ##### -Viewmodel Toggle
 > ##### -Voice Chat Binds
 > ##### -Text Chat Binds
+> ##### -Lenny Binds
 > ##### -Kill Binds
 > ##### -Loadout Selection Binds
 > ##### -Build/Destroy Buildings Binds
@@ -33,15 +37,15 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 
 ## Installation
 
-> ### Default Install Path for All Users:
-> #### 1. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/) of TF2-MASTERCLASS-CONFIG.zip 
-> #### 2. Extract the .cfg files from `TF2-MASTERCLASS-CONFIG/scripts` to the following directory:
-> `\steamapps\common\Team Fortress 2\tf\cfg\`
+1. Download and install [Python 3.0+](https://www.python.org/downloads/) for your operating system
+2. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest) of `install-tf2-masterclass-config.py`
+3. Open a command prompt window
+4. Run following command and follow the installation prompts:
+```
+py install-tf2-masterclass-config.py 
+```
 
-> ### Install Path for MasterConfig Users:
-> #### 1. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/) of TF2-MASTERCLASS-CONFIG.zip 
-> #### 2. Extract the .cfg files from `TF2-MASTERCLASS-CONFIG/scripts` to the following directory: 
-> `\steamapps\common\Team Fortress 2\tf\cfg\overrides`
+> You can perform a manually install using the latest "tf2-masterclass-config.zip"; however I will not provide support for this method.
 
 ---
 
