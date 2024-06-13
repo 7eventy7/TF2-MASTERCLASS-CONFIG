@@ -10,7 +10,7 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 #### **Comprehensive Documentation**:
 > Each `.cfg` file includes detailed comments explaining what each bind and command does.
 
-#### **Easy Instlation**:
+#### **Easy Installation**:
 > Installation is made simple through the use of a python script that automates the whole process.
   
 #### **Streamlined Personalization**:
