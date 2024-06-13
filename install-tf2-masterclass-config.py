@@ -30,45 +30,31 @@ def display_startup_screen():
     print("="*70)
     print(" " * 20 + "TF2 MASTERCLASS CONFIG INSTALLER")
     print("="*70)
+    print(" " * 25 + "v2.0.1 -- June 13th, 2024")
+    print("="*70)
     print("\nThis script will help you install the TF2 Masterclass Config.")
     print("Please follow the instructions as prompted.\n")
     print("="*70 + "\n")
 
-def find_steam_paths():
-    steam_paths = []
+def find_tf2_install_directory():
+    possible_paths = []
     if platform.system() == "Windows":
         for drive in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
             path = Path(f"{drive}:\\")
             if path.exists():
+                possible_paths.append(path / "Program Files (x86)" / "Steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg")
+                possible_paths.append(path / "steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg")
                 for root, dirs, files in os.walk(path):
                     if "steamapps" in dirs:
-                        steam_path = Path(root) / "steamapps"
-                        steam_paths.append(steam_path)
+                        steam_path = Path(root) / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg"
+                        possible_paths.append(steam_path)
                         break
-    elif platform.system() == "Darwin":  # macOS
-        steam_path = Path.home() / "Library" / "Application Support" / "Steam" / "steamapps"
-        if steam_path.exists():
-            steam_paths.append(steam_path)
-    else:  # Linux
-        steam_path = Path.home() / ".steam" / "steam" / "steamapps"
-        if steam_path.exists():
-            steam_paths.append(steam_path)
-    
-    if not steam_paths:
-        raise FileNotFoundError("Steam installation directory not found")
-    
-    return steam_paths
 
-def find_tf2_install_directory():
-    steam_paths = find_steam_paths()
-    tf2_path = None
-    for steam_path in steam_paths:
-        tf2_path = steam_path / "common" / "Team Fortress 2" / "tf" / "cfg"
-        if tf2_path.exists():
-            print(f"TF2 install directory found:\n\"{tf2_path}\"\n")
-            return tf2_path
-        else:
-            print(f"TF2 path not found in drive {steam_path.drive} searching other drives\n")
+    for path in possible_paths:
+        if path.exists():
+            print(f"TF2 install directory found:\n\"{path}\"\n")
+            return path
+
     raise FileNotFoundError("TF2 install directory not found in any of the steamapps directories")
 
 def download_latest_release(url):
@@ -109,13 +95,13 @@ def update_autoexec_cfg(destination_folder):
     disable_cartoon = input("\nYour choice: ").strip().lower() == 'yes'
     
     print("="*70)
-    print("\n5. Which first lenny shall be bound to [?\nDefault: \"0\" - sadge\nUser Input: (0 thru 5)")
+    print("\n5. Which first lenny shall be bound to '['?\nDefault: \"0\" - sadge\nUser Input: (0 thru 5)")
     for key, value in LENNY_NAMES.items():
         print(f"({key}) - {value}")
     lenny1 = input("\nYour choice: ").strip() or "0"
     
     print("="*70)
-    print("\n6. Which second lenny shall be bound to ]?\nDefault: \"1\" - skeptical\nUser Input: (0 thru 5)")
+    print("\n6. Which second lenny shall be bound to ']'?\nDefault: \"1\" - skeptical\nUser Input: (0 thru 5)")
     for key, value in LENNY_NAMES.items():
         print(f"({key}) - {value}")
     lenny2 = input("\nYour choice: ").strip() or "1"
@@ -201,6 +187,9 @@ def main():
         print(f"\nThe TF2 Masterclass Config has been successfully installed to:\n\"{destination_folder}\".")
         print("\nThank you for choosing to use my scripts!\n")
         print("="*70)
+
+        # Wait for user input before exiting
+        input("Press any button to exit...")
     
     except Exception as e:
         print(f"An error occurred: {e}")

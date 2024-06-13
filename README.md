@@ -37,13 +37,43 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 
 ## Installation
 
-1. Download and install [Python 3.0+](https://www.python.org/downloads/) for your operating system
-2. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest) of `install-tf2-masterclass-config.py`
-3. Open a command prompt window
-4. Run following command and follow the installation prompts:
-```
-py install-tf2-masterclass-config.py 
-```
+### Windows 
+1. Download and install [Python 3.0+](https://www.python.org/downloads/) for your operating system.
+2. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest) of `install-tf2-masterclass-config.py`.
+3. Right Click `install-tf2-masterclass-config.py` > Open with > Python.
+4. Follow the installation prompts and enjoy!
+
+### Linux
+1. Install Python 3.0+ using your package manager. For example, on Debian-based systems:
+    ```bash
+    sudo apt update
+    sudo apt install python3
+    ```
+2. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest) of `install-tf2-masterclass-config.py`:
+    ```bash
+    wget https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest/download/install-tf2-masterclass-config.py
+    ```
+3. Run the script using Python:
+    ```bash
+    python3 install-tf2-masterclass-config.py
+    ```
+4. Follow the installation prompts and enjoy!
+
+### Mac
+1. Install Python 3.0+ using Homebrew:
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install python
+    ```
+2. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest) of `install-tf2-masterclass-config.py`:
+    ```bash
+    curl -LO https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest/download/install-tf2-masterclass-config.py
+    ```
+3. Run the script using Python:
+    ```bash
+    python3 install-tf2-masterclass-config.py
+    ```
+4. Follow the installation prompts and enjoy!
 
 > You can perform a manually install using the latest "tf2-masterclass-config.zip"; however I will not provide support for this method.
 
