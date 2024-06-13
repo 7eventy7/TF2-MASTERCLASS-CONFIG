@@ -38,7 +38,7 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 ## Installation
 
 ### Windows 
-1. Download and install [Python 3.0+](https://www.python.org/downloads/) for your operating system.
+1. Download and install [Python 3.0+](https://www.python.org/downloads/) for Windows.
 2. Download the latest [release](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/releases/latest) of `install-tf2-masterclass-config.py`.
 3. Right Click `install-tf2-masterclass-config.py` > Open with > Python.
 4. Follow the installation prompts and enjoy!
