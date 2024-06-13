@@ -52,8 +52,3 @@ If you have a script or improvement you'd like to share, please submit a pull re
 
 ## Support
 If you encounter any issues or have questions, feel free to open an issue on GitHub or reach out to the community for assistance.
-
----
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
