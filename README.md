@@ -4,7 +4,9 @@ A set of pre-configured and extensively documented `.cfg` scripts for Team Fortr
 ---
 
 ## Introduction
-TF2-MASTERCLASS-CONFIG is a collection of advanced and customizable configuration scripts designed to enhance your gameplay experience in Team Fortress 2. These scripts leverage the wait function, which means they are compatible primarily with Valve servers. Most community servers disable the wait function with the setting `sv_allow_wait_command 1`, which limits the usage of these scripts.
+TF2-MASTERCLASS-CONFIG is a collection of advanced and customizable configuration scripts designed to enhance your gameplay experience in Team Fortress 2. These scripts leverage the wait function, which means they are compatible primarily with Valve servers. Most community servers disable the wait function with the setting `sv_allow_wait_command 1`, which limits the usage of these scripts. 
+
+To check if a server is allows the wait function, type `sv_allow_wait_command` in console. An output of 1 means wait function is allowed, output of 0 means it is disabled.
 
 ---
 
