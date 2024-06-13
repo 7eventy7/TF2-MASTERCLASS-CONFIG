@@ -74,8 +74,5 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 > - You can alternatively perform a manual install using the latest "tf2-masterclass-config.zip"
 > - I however will not be provide any support for this method
 
-# Contributions
-If you have a script or improvement you'd like to share, please submit a pull request or open an issue on GitHub.
-
-# Support
-If you encounter any issues or have questions, feel free to open an issue on GitHub or reach out to the community for assistance.
+# Contributions / Support
+If you encounter any issues, have questions, or have an improvement you'd like to share, please submit a pull request or open an issue on GitHub.
