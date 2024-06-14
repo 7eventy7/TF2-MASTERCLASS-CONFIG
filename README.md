@@ -6,30 +6,22 @@ To check if a server allows the wait function, type `sv_allow_wait_command` in c
 
 # Features
 #### **Comprehensive Documentation**:
-> Each `.cfg` file includes detailed comments explaining what each bind and command does.
+> Each `.cfg` file includes detailed comments explaining what each bind and command does.   
+> A full list of keybinds can also be found here on GitHub, making it easy to find anything.
 
 #### **Easy Installation**:
-> Installation is made simple through the use of a python script that automates the whole process.
-  
-#### **Streamlined Personalization**:
-> The installation process includes the options to change a few common configuration options.
+> Installation is made simple through the use of a python script that automates the whole process.  
+> The installation process also includes the options to change a few common configuration options.
   
 #### **Extensively Tested**:
-> All configurations have been thoroughly tested to ensure stability and performance.
-  
-#### **Included Commands/Binds:**
-> ##### -Graphics Parameters
-> ##### -Viewmodel Toggle
-> ##### -Voice Chat Binds
-> ##### -Text Chat Binds
-> ##### -Lenny Binds
-> ##### -Kill Binds
-> ##### -Loadout Selection Binds
-> ##### -Build/Destroy Buildings Binds
-> ##### -Sticky Spam Bind
-> ##### -Quick Disguise Bind
-> ##### -Auto Sap Bind
-> ##### -Medic Radar Bind
+> All configurations have been thoroughly tested to ensure stability and performance.   
+> Please report any issues or errors by opening an issue here on GitHub.
+
+# Keybinds
+Check out all the default [Keybinds](https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG/blob/main/KEYBINDS.md) that are avaliable in this config.
+
+> It is a good idea to search through the keybinds before changing them during instaltion.     
+> Failing to do can result in overwriting keybinds and causing many different issues
 
 # Installation
 
