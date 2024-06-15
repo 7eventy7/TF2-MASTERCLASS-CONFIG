@@ -30,7 +30,7 @@ def display_startup_screen():
     print("="*70)
     print(" " * 20 + "TF2 MASTERCLASS CONFIG INSTALLER")
     print("="*70)
-    print(" " * 25 + "v2.1.0 -- June 14th, 2024")
+    print(" " * 25 + "v2.1.1 -- June 15th, 2024")
     print("="*70)
     print("\nThis script will help you install the TF2 Masterclass Config.")
     print("Please follow the instructions as prompted.\n")
@@ -81,6 +81,9 @@ def update_autoexec_cfg(destination_folder):
     print("="*70)
     print("\n1. What is your desired fps limit?\nDefault: \"0\" - Disabled\nUser Input: (0 thru 1000)")
     fps_limit = input("\nYour choice: ").strip() or "0"
+    if not fps_limit.isdigit() or not (0 <= int(fps_limit) <= 1000):
+        print("Unexpected input. Please enter a number between 0 and 1000.")
+        return
     
     print("="*70)
     print("\n2. Change the push to talk keybind?\nDefault: \"INS\" - Insert\nUser Input: (Any single keybind)")
@@ -88,23 +91,37 @@ def update_autoexec_cfg(destination_folder):
     
     print("="*70)
     print("\n3. Change crouch to 'CTRL' and crouch-jump to 'SHIFT'? (yes/no)\nDefault: \"CTRL\" - crouch & \"SHIFT\" - crouch-jump\nUser Input: (yes / no)")
-    swap_crouch = input("\nYour choice: ").strip().lower() in ['yes', 'y']
+    swap_crouch = input("\nYour choice: ").strip().lower()
+    if swap_crouch not in ['yes', 'y', 'no', 'n']:
+        print("Unexpected input. Please enter 'yes' or 'no'.")
+        return
+    swap_crouch = swap_crouch in ['yes', 'y']
     
     print("="*70)
     print("\n4. Disable the original cartoony look?\nDefault: \"NO\" - enabled\nUser Input: (yes / no)")
-    disable_cartoon = input("\nYour choice: ").strip().lower() in ['yes', 'y']
+    disable_cartoon = input("\nYour choice: ").strip().lower()
+    if disable_cartoon not in ['yes', 'y', 'no', 'n']:
+        print("Unexpected input. Please enter 'yes' or 'no'.")
+        return
+    disable_cartoon = disable_cartoon in ['yes', 'y']
     
     print("="*70)
     print("\n5. Which first lenny shall be bound to '['?\nDefault: \"0\" - sadge\nUser Input: (0 thru 5)")
     for key, value in LENNY_NAMES.items():
         print(f"({key}) - {value}")
     lenny1 = input("\nYour choice: ").strip() or "0"
+    if lenny1 not in LENNY_FACES:
+        print("Unexpected input. Please enter a number between 0 and 5.")
+        return
     
     print("="*70)
     print("\n6. Which second lenny shall be bound to ']'?\nDefault: \"1\" - skeptical\nUser Input: (0 thru 5)")
     for key, value in LENNY_NAMES.items():
         print(f"({key}) - {value}")
     lenny2 = input("\nYour choice: ").strip() or "1"
+    if lenny2 not in LENNY_FACES:
+        print("Unexpected input. Please enter a number between 0 and 5.")
+        return
     
     print("="*70)
     
@@ -148,8 +165,11 @@ def prompt_for_changes(destination_folder):
     print("="*70)
     print(" " * 20 + "EXTRACTION SUCCESSFUL")
     print("="*70 + "\n")
-    make_changes = input("Would you like to make any changes to the .cfg scripts? (yes/no): ").strip().lower() in ['yes', 'y']
-    if make_changes:
+    make_changes = input("Would you like to make any changes to the .cfg scripts? (yes/no): ").strip().lower()
+    if make_changes not in ['yes', 'y', 'no', 'n']:
+        print("Unexpected input. Please enter 'yes' or 'no'.")
+        return
+    if make_changes in ['yes', 'y']:
         update_autoexec_cfg(destination_folder)
     else:
         print("\nNo changes will be made to the .cfg scripts.")
@@ -161,8 +181,11 @@ def main():
         tf2_cfg_path = find_tf2_install_directory()
         
         # Ask the user if they use Mastercomfig
-        use_mastercomfig = input("Do you use Mastercomfig? (yes/no): ").strip().lower() in ['yes', 'y']
-        if use_mastercomfig:
+        use_mastercomfig = input("Do you use Mastercomfig? (yes/no): ").strip().lower()
+        if use_mastercomfig not in ['yes', 'y', 'no', 'n']:
+            print("Unexpected input. Please enter 'yes' or 'no'.")
+            return
+        if use_mastercomfig in ['yes', 'y']:
             destination_folder = tf2_cfg_path / "overrides"
         else:
             destination_folder = tf2_cfg_path
