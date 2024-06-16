@@ -1,0 +1,26 @@
+{
+    "content": null,
+    "embeds": [
+      {
+        "title": "**WELCOME TO TF2-MCC!**",
+        "description": "*( TF2 MasterClass Config Community )*\n\nThis server is dedicated to discussing and sharing advanced scripting techniques for Team Fortress 2. Below you will find important information about the server, including the channels, roles, and point system.",
+        "color": 8163070
+      },
+      {
+        "title": "**USEFUL LINKS**",
+        "description": "__**PERMANENT INVITE LINK**__\n> https://discord.com/invite/PGuG2ucZB6\n\n__**GITHUB PROJECT REPO**__\n> https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG",
+        "color": 10190078
+      },
+      {
+        "title": "**CHANNEL GUIDE**",
+        "description": "__**HUB**__\n• <#1251734742944976903> - A general information channel.              \n• <#1251734742944976904> - Server rules and guidelines.            \n• <#1251734742944976905> - New releases and updates for the config.\n• <#1251734742944976906> - Links to other related communities.\n• <#1251734742944976907> - Introduce yourself to the community.\n\n__**GENERAL**__\n• <#1251734742944976909> - General chat for all topics.\n• <#1251781970791497748> - Discuss and share TF2 scripts.\n• <#1251734743314206750> - Share your best memes.\n• <#1251734743314206751> - Use bot commands here.\n• <#1251734743314206752> - Off-topic discussions.\n\n__**MASTERCLASS-CONFIG**__\n• <#1251734743314206754> - Discuss gameplay-related topics.\n• <#1251751071806656614> - Get help and support for the config.",
+        "color": 6326773
+      },
+      {
+        "title": "**ROLES & POINTS SYSTEM**",
+        "description": "- **<@&1251734742932389931>** - 10 points\n- **<@&1251734742932389932>** - 25 points\n- **<@&1251734742932389933>** - 50 points\n- **<@&1251734742932389934>** - 100 points\n- **<@&1251734742932389935>** - 250 points\n\n### How to Earn Points\n- 1 point per message.\n- 1 point per 10 minutes in a voice channel.",
+        "color": 8177150
+      }
+    ],
+    "attachments": []
+  }
