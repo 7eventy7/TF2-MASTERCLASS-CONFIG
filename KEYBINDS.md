@@ -6,189 +6,179 @@
 
 ### GENERAL / ALL CLASS
 #### Voice Chat
-`Z` brings up voice menu 1  
-`X` brings up voice menu 2  
-`C` brings up voice menu 3  
-`E` calls for medic!  
-`Q` calls out spy!  
-`INS` starts voice recording  
+
+| KEYBIND | DESCRIPTION               | TYPE     |
+|---------|---------------------------|----------|
+| z       | brings up voice menu 1    | press    |
+| x       | brings up voice menu 2    | press    |
+| c       | brings up voice menu 3    | press    |
+| e       | calls for medic!          | press    |
+| q       | calls out spy!            | press    |
+| ins     | starts voice recording    | press    |
 
 #### Text Chat
-`ENTER` opens all chat  
-`\` opens team chat  
-`]` sends first lenny in chat  
-`[` sends second lenny in chat
+
+| KEYBIND | DESCRIPTION               | TYPE     |
+|---------|---------------------------|----------|
+| enter   | opens all chat            | press    |
+| \       | opens team chat           | press    |
+| ]       | sends first lenny in chat | press    |
+| [       | sends second lenny in chat| press    |
 
 #### Common Action
-`MOUSE3` uses action slot item  
-`MWHEELUP` selects previous item  
-`H` special attacks  
-`R` reloads  
-`/` drops item  
-`F` inspects item  
-`G` opens taunt menu  
-`TAB` shows scores  
-`SHIFT` crouches  
+
+| KEYBIND | DESCRIPTION               | TYPE     |
+|---------|---------------------------|----------|
+| mouse3  | uses action slot item     | press    |
+| mwheelup| selects previous item     | press    |
+| h       | special attacks           | press    |
+| r       | reloads                   | press    |
+| /       | drops item                | press    |
+| f       | inspects item             | press    |
+| g       | opens taunt menu          | press    |
+| tab     | shows scores              | press    |
+| shift   | crouches                  | press    |
 
 #### Special Action
-`BACKSPACE` toggles viewmodel drawing   
-`MWHEELDOWN` jumps for bunny-hop  
-`CTRL` jump-crouches    
+
+| KEYBIND    | DESCRIPTION                  | TYPE     |
+|------------|------------------------------|----------|
+| backspace  | toggles viewmodel drawing    | press    |
+| mwheeldown | jumps for bunny-hop          | press    |
+| ctrl       | jump-crouches                | press    |
 
 #### Game Selection
-`,` changes class  
-`.` changes team  
+
+| KEYBIND | DESCRIPTION             | TYPE     |
+|---------|-------------------------|----------|
+| ,       | changes class           | press    |
+| .       | changes team            | press    |
 
 #### Loadout Selection
-`LEFTARROW` selects loadout a   
-`DOWNARROW` selects loadout b   
-`RIGHTARROW` selects loadout c  
-`UPARROW` selects loadout d
+
+| KEYBIND     | DESCRIPTION             | TYPE     |
+|-------------|-------------------------|----------|
+| leftarrow   | selects loadout a       | press    |
+| downarrow   | selects loadout b       | press    |
+| rightarrow  | selects loadout c       | press    |
+| uparrow     | selects loadout d       | press    |
 
 #### Kill
-`=` explodes  
-`-` ragdolls  
+
+| KEYBIND | DESCRIPTION               | TYPE     |
+|---------|---------------------------|----------|
+| =       | explodes                  | press    |
+| -       | ragdolls                  | press    |
 
 #### F-Key Commands
-`F9` toggles VR  
-`F10` disables voice chat  
-`F11` toggles player ready  
-`F12` takes a screenshot  
 
---- 
+| KEYBIND | DESCRIPTION                | TYPE     |
+|---------|----------------------------|----------|
+| f9      | toggles VR                 | press    |
+| f10     | disables voice chat        | press    |
+| f11     | toggles player ready       | press    |
+| f12     | takes a screenshot         | press    |
+
+---
 
 ### UBERCHARGE VOICE COMMANDS
 #### All Class ( except medic )
-`T` calls ubercharge me!
+
+| KEYBIND | DESCRIPTION              | TYPE     |
+|---------|--------------------------|----------|
+| t       | calls ubercharge me!     | press    |
 
 #### Medic
-`T` calls ubercharge ready!
+
+| KEYBIND | DESCRIPTION                | TYPE     |
+|---------|----------------------------|----------|
+| t       | calls ubercharge ready!    | press    |
 
 ---
 
 ### DEMOMAN
 #### Stickybombs
-`MOUSE1` spams stickies     
-= when switching to the secondary slot by pressing `2`, holding `MOUSE1` continually shoots stickies instead of charging them
 
-`MOUSE4` charges stickies   
-= holding `MOUSE4` continually attacks, which charges stickies when holding a stickybomb launcher
+| KEYBIND | DESCRIPTION                                   | TYPE     |
+|---------|---------------------------------------------- |----------|
+| mouse1  | continually shoots stickybombs                | hold     |
+| mouse1  | shoots a single stickybomb                    | hold     |
+| mouse4  | charges stickboms                             | hold     |
 
 ---
 
 ### ENGINEER
 #### Destroy / Build Buildings
-`MOUSE4` + `1` builds and destroys sentry       
-= holding `MOUSE4` and pressing `1` destroys and rebuilds a sentry
 
-`MOUSE4` + `2` builds and destroys dispenser        
-= holding `MOUSE4` and pressing `2` destroys and rebuilds a dispenser
+| KEYBIND     | DESCRIPTION                           | TYPE          |
+|-------------|---------------------------------------|---------------|
+| mouse4 + 1  | builds/destroys sentry                | press + hold  |
+| mouse4 + 2  | builds/destroys dispenser             | press + hold  |
+| mouse4 + 3  | builds/destroys teleporter entrance   | press + hold  |
+| mouse4 + 4  | builds/destroys teleporter exit       | press + hold  |
 
-`MOUSE4` + `3` builds and destroys teleporter entrance      
-= holding `MOUSE4` and pressing `3` destroys and rebuilds a teleporter entrance
-
-`MOUSE4` + `4` builds and destroys teleporter exit      
-= holding `MOUSE4` and pressing `4` destroys and rebuilds a teleporter exit
 
 #### Destroy Buildings
-`MOUSE5` + `1` destroys sentry      
-= holding `MOUSE5` and pressing `1` destroys a sentry
 
-`MOUSE5` + `2` destroys dispenser       
-= holding `MOUSE5` and pressing `2` destroys a dispenser
-
-`MOUSE5` + `3` destroys teleporter entrance     
-= holding `MOUSE5` and pressing `3` destroys a teleporter entrance
-
-`MOUSE5` + `4` destroys teleporter exit     
-= holding `MOUSE5` and pressing `4` destroys a teleporter exit
+| KEYBIND     | DESCRIPTION                        | TYPE          |
+|-------------|------------------------------------|---------------|
+| mouse5 + 1  | destroys sentry                    | press + hold  |
+| mouse5 + 2  | destroys dispenser                 | press + hold  |
+| mouse5 + 3  | destroys teleporter entrance       | press + hold  |
+| mouse5 + 4  | destroys teleporter exit           | press + hold  |
 
 ---
 
 ### MEDIC
 #### Medigun
-`MOUSE2` swaps to Medigun       
-= pressing `MOUSE2` swaps to the Medigun
 
-`MOUSE2` swaps to Medigun and activates ubercharge      
-= holding `MOUSE2` swaps to the Medigun and activates ubercharge
-
-`MOUSE5` activates medic radar      
-= holding `MOUSE5` activates the medic radar
+| KEYBIND | DESCRIPTION                               | TYPE          |
+|---------|-------------------------------------------|---------------|
+| mouse2  | swaps to Medigun                          | press         |
+| mouse2  | swaps to Medigun and activates ubercharge | hold          |
+| mouse5  | activates medic radar                     | hold          |
 
 #### Vaccinator
-`MOUSE4` + `1` switches to bullet resistance        
-= holding `MOUSE4` and pressing `1` switches the Vaccinator to bullet resistance
 
-`MOUSE4` + `2` switches to explosive resistance     
-= holding `MOUSE4` and pressing `2` switches the Vaccinator to explosive resistance
-
-`MOUSE4` + `3` switches to fire resistance      
-= holding `MOUSE4` and pressing `3` switches the Vaccinator to fire resistance
+| KEYBIND     | DESCRIPTION                        | TYPE          |
+|-------------|------------------------------------|---------------|
+| mouse4 + 1  | switches to bullet resistance      | press + hold  |
+| mouse4 + 2  | switches to explosive resistance   | press + hold  |
+| mouse4 + 3  | switches to fire resistance        | press + hold  |
 
 ---
 
 ### SPY
 #### Friendly Disguises
-`MOUSE4` disguises as last disguise / changes disguised weapon  
-= pressing `MOUSE4` disguises yourself as your last disguise
 
-`MOUSE4` + `1` disguises as friendly scout  
-= holding `MOUSE4` and pressing `1` disguises yourself as a friendly scout
-
-`MOUSE4` + `2` disguises as friendly soldier    
-= holding `MOUSE4` and pressing `2` disguises yourself as a friendly soldier
-
-`MOUSE4` + `3` disguises as friendly pyro   
-= holding `MOUSE4` and pressing `3` disguises yourself as a friendly pyro
-
-`MOUSE4` + `4` disguises as friendly demoman    
-= holding `MOUSE4` and pressing `4` disguises yourself as a friendly demoman
-
-`MOUSE4` + `5` disguises as friendly heavy  
-= holding `MOUSE4` and pressing `5` disguises yourself as a friendly heavy
-
-`MOUSE4` + `6` disguises as friendly engineer   
-= holding `MOUSE4` and pressing `6` disguises yourself as a friendly engineer
-
-`MOUSE4` + `7` disguises as friendly medic  
-= holding `MOUSE4` and pressing `7` disguises yourself as a friendly medic
-
-`MOUSE4` + `8` disguises as friendly sniper     
-= holding `MOUSE4` and pressing `8` disguises yourself as a friendly sniper
-
-`MOUSE4` + `9` disguises as friendly spy    
-= holding `MOUSE4` and pressing `9` disguises yourself as a friendly spy
+| KEYBIND     | DESCRIPTION                        | TYPE          |
+|-------------|------------------------------------|---------------|
+| mouse4      | disguises as last disguise         | press         |
+| mouse4      | changes disguised weapon           | press         |
+| mouse4 + 1  | disguises as friendly scout        | press + hold  |
+| mouse4 + 2  | disguises as friendly soldier      | press + hold  |
+| mouse4 + 3  | disguises as friendly pyro         | press + hold  |
+| mouse4 + 4  | disguises as friendly demoman      | press + hold  |
+| mouse4 + 5  | disguises as friendly heavy        | press + hold  |
+| mouse4 + 6  | disguises as friendly engineer     | press + hold  |
+| mouse4 + 7  | disguises as friendly medic        | press + hold  |
+| mouse4 + 8  | disguises as friendly sniper       | press + hold  |
+| mouse4 + 9  | disguises as friendly spy          | press + hold  |
 
 #### Enemy Disguises
-`MOUSE5` disguises as last disguise / changes disguised weapon  
-= pressing `MOUSE5` disguises yourself as your last disguise
 
-`MOUSE5` + `1` disguises as enemy scout     
-= holding `MOUSE5` and pressing `1` disguises yourself as an enemy scout
-
-`MOUSE5` + `2` disguises as enemy soldier   
-= holding `MOUSE5` and pressing `2` disguises yourself as an enemy soldier
-
-`MOUSE5` + `3` disguises as enemy pyro      
-= holding `MOUSE5` and pressing `3` disguises yourself as an enemy pyro
-
-`MOUSE5` + `4` disguises as enemy demoman   
-= holding `MOUSE5` and pressing `4` disguises yourself as an enemy demoman
-
-`MOUSE5` + `5` disguises as enemy heavy     
-= holding `MOUSE5` and pressing `5` disguises yourself as an enemy heavy
-
-`MOUSE5` + `6` disguises as enemy engineer      
-= holding `MOUSE5` and pressing `6` disguises yourself as an enemy engineer
-
-`MOUSE5` + `7` disguises as enemy medic     
-= holding `MOUSE5` and pressing `7` disguises yourself as an enemy medic
-
-`MOUSE5` + `8` disguises as enemy sniper        
-= holding `MOUSE5` and pressing `8` disguises yourself as an enemy sniper
-
-`MOUSE5` + `9` disguises as enemy spy       
-= holding `MOUSE5` and pressing `9` disguises yourself as an enemy spy
+| KEYBIND     | DESCRIPTION                        | TYPE          |
+|-------------|------------------------------------|---------------|
+| mouse5      | disguises as last disguise         | press         |
+| mouse5      | changes disguised weapon           | press         |
+| mouse5 + 1  | disguises as enemy scout           | press + hold  |
+| mouse5 + 2  | disguises as enemy soldier         | press + hold  |
+| mouse5 + 3  | disguises as enemy pyro            | press + hold  |
+| mouse5 + 4  | disguises as enemy demoman         | press + hold  |
+| mouse5 + 5  | disguises as enemy heavy           | press + hold  |
+| mouse5 + 6  | disguises as enemy engineer        | press + hold  |
+| mouse5 + 7  | disguises as enemy medic           | press + hold  |
+| mouse5 + 8  | disguises as enemy sniper          | press + hold  |
+| mouse5 + 9  | disguises as enemy spy             | press + hold  |
 
 ---
