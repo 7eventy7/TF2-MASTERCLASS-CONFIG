@@ -30,7 +30,7 @@ def display_startup_screen():
     print("="*70)
     print(" " * 20 + "TF2 MASTERCLASS CONFIG INSTALLER")
     print("="*70)
-    print(" " * 25 + "v2.1.3 -- June 18th, 2024")
+    print(" " * 25 + "v2.1.4 -- June 18th, 2024")
     print("="*70)
     print("\nThis script will help you install the TF2 Masterclass Config.")
     print("Please follow the instructions as prompted.\n")
