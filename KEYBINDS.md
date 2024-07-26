@@ -130,6 +130,7 @@
 | mouse4 + 2  | builds/destroys dispenser             | press + hold  |
 | mouse4 + 3  | builds/destroys teleporter entrance   | press + hold  |
 | mouse4 + 4  | builds/destroys teleporter exit       | press + hold  |
+| mouse4 + 5  | builds mann vc machine mini-sentry    | press + hold  |
 
 #### Destroy Buildings
 
