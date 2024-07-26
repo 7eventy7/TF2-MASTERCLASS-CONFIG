@@ -117,7 +117,7 @@
 |-------------|---------------------------------------|---------------|
 | mouse1      | continually shoots stickybombs        | hold          |
 | mouse1      | shoots a single stickybomb            | hold          |
-| mouse4      | charges stickboms                     | hold          |
+| mouse4      | charges stickbombs                    | hold          |
 
 ---
 
