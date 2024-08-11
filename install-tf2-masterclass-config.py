@@ -19,42 +19,56 @@ def display_startup_screen():
     print("=" * 70 + "\n")
 
 def find_tf2_install_directory():
-    possible_paths = []
     system = platform.system()
     
     if system == "Windows":
         for drive in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
             drive_path = Path(f"{drive}:")
             if drive_path.exists():
-                possible_paths.extend([
+                standard_paths = [
                     drive_path / "Program Files (x86)" / "Steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg",
                     drive_path / "steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg"
-                ])
-                steam_path = next((Path(root) / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg" 
-                                   for root, dirs, _ in os.walk(drive_path) if "steamapps" in dirs), None)
-                if steam_path:
-                    possible_paths.append(steam_path)
+                ]
+                for path in standard_paths:
+                    if path.exists():
+                        print(f"TF2 install directory found:\n\"{path}\"\n")
+                        return path
+                
+                try:
+                    for root, dirs, _ in os.walk(drive_path):
+                        if "steamapps" in dirs:
+                            steam_path = Path(root) / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg"
+                            if steam_path.exists():
+                                print(f"TF2 install directory found:\n\"{steam_path}\"\n")
+                                return steam_path
+                except Exception:
+                    pass
     elif system == "Darwin":  # macOS
-        possible_paths.append(Path.home() / "Library" / "Application Support" / "Steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg")
+        mac_path = Path.home() / "Library" / "Application Support" / "Steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg"
+        if mac_path.exists():
+            print(f"TF2 install directory found:\n\"{mac_path}\"\n")
+            return mac_path
     elif system == "Linux":
-        possible_paths.extend([
+        linux_paths = [
             Path.home() / ".steam" / "steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg",
             Path.home() / ".local" / "share" / "Steam" / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg"
-        ])
+        ]
+        for path in linux_paths:
+            if path.exists():
+                print(f"TF2 install directory found:\n\"{path}\"\n")
+                return path
 
-    for path in possible_paths:
-        if path.exists():
-            print(f"TF2 install directory found:\n\"{path}\"\n")
-            return path
-
-    raise FileNotFoundError("TF2 install directory not found in any of the steamapps directories")
+    raise FileNotFoundError("TF2 install directory not found in any of the searched locations")
 
 def download_latest_release(url):
-    with urlopen(url) as response:
-        if response.status != 200:
-            raise Exception(f"Failed to download file: {response.reason}")
-        print("Downloaded latest release from GitHub\n")
-        return BytesIO(response.read())
+    try:
+        with urlopen(url) as response:
+            if response.status != 200:
+                raise Exception(f"Failed to download file: {response.reason}")
+            print("Downloaded latest release from GitHub\n")
+            return BytesIO(response.read())
+    except Exception as e:
+        raise
 
 def extract_cfg_files(zip_file, destination_folder):
     with zipfile.ZipFile(zip_file, 'r') as zip_ref:
