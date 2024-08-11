@@ -8,29 +8,11 @@ from urllib.request import urlopen
 GITHUB_REPO_URL = "https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG"
 LATEST_RELEASE_URL = f"{GITHUB_REPO_URL}/releases/latest/download/TF2-MASTERCLASS-CONFIG.zip"
 
-LENNY_FACES = {
-    "0": "( ͡ಠ ʖ̯ ͡ಠ)",  # sadge
-    "1": "( ͝° ͜ʖ͡°)",  # skeptical
-    "2": "( ͡° ͜ ͡°)",  # nose less
-    "3": "( ͡o ͜ʖ ͡o)",  # wide eyed
-    "4": "( ͠° ͟ʖ ͡°)",  # upset
-    "5": "( ͡~ ͜ʖ ͡°)"   # wink
-}
-
-LENNY_NAMES = {
-    "0": "sadge",
-    "1": "skeptical",
-    "2": "nose less",
-    "3": "wide eyed",
-    "4": "upset",
-    "5": "wink"
-}
-
 def display_startup_screen():
     print("=" * 70)
     print(" " * 20 + "TF2 MASTERCLASS CONFIG INSTALLER")
     print("=" * 70)
-    print(" " * 25 + "v2.2.1 -- July 26th, 2024")
+    print(" " * 25 + "v2.2.2 -- August 11th, 2024")
     print("=" * 70)
     print("\nThis script will help you install the TF2 Masterclass Config.")
     print("Please follow the instructions as prompted.\n")
@@ -119,22 +101,10 @@ def update_autoexec_cfg(destination_folder):
     ).lower() in ['yes', 'y']
     
     print("=" * 70)
-    for key, value in LENNY_NAMES.items():
-        print(f"({key}) - {value}")
-    lenny1 = get_valid_input(
-        "\n5. Which first lenny shall be bound to '['?\nDefault: \"0\" - sadge\nUser Input: (0 thru 5)\nYour choice: ",
-        lambda x: x in LENNY_FACES,
-        "Unexpected input. Please enter a number between 0 and 5."
-    ) or "0"
+    bind_left_bracket = input("\n5. Enter text to bind to '[' key:\nYour input: ")
     
     print("=" * 70)
-    for key, value in LENNY_NAMES.items():
-        print(f"({key}) - {value}")
-    lenny2 = get_valid_input(
-        "\n6. Which second lenny shall be bound to ']'?\nDefault: \"1\" - skeptical\nUser Input: (0 thru 5)\nYour choice: ",
-        lambda x: x in LENNY_FACES,
-        "Unexpected input. Please enter a number between 0 and 5."
-    ) or "1"
+    bind_right_bracket = input("\n6. Enter text to bind to ']' key:\nYour input: ")
     
     print("=" * 70)
     
@@ -143,8 +113,8 @@ def update_autoexec_cfg(destination_folder):
         'fps_max': lambda x: x.split()[0] + f" {fps_limit}\n",
         'bind ins': f'bind {ptt_key} "+voicerecord"',
         '// (press) \'ins\' starts voice recording': f"    // (press) '{ptt_key}' starts voice recording",
-        'bind [': f'bind [ "say {LENNY_FACES[lenny1]}"',
-        'bind ]': f'bind ] "say {LENNY_FACES[lenny2]}"'
+        'bind [': f'bind [ "say {bind_left_bracket}"',
+        'bind ]': f'bind ] "say {bind_right_bracket}"'
     }
 
     if swap_crouch:
