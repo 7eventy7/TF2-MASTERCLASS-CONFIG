@@ -4,6 +4,8 @@ import platform
 from pathlib import Path
 from io import BytesIO
 from urllib.request import urlopen
+import traceback
+import winreg  # For Windows registry access
 
 GITHUB_REPO_URL = "https://github.com/7eventy7/TF2-MASTERCLASS-CONFIG"
 LATEST_RELEASE_URL = f"{GITHUB_REPO_URL}/releases/latest/download/TF2-MASTERCLASS-CONFIG.zip"
@@ -12,16 +14,39 @@ def display_startup_screen():
     print("=" * 70)
     print(" " * 20 + "TF2 MASTERCLASS CONFIG INSTALLER")
     print("=" * 70)
-    print(" " * 25 + "v2.2.2 -- August 11th, 2024")
+    print(" " * 25 + "v2.2.3 -- August 19th, 2024")
     print("=" * 70)
     print("\nThis script will help you install the TF2 Masterclass Config.")
     print("Please follow the instructions as prompted.\n")
     print("=" * 70 + "\n")
 
+def get_steam_path():
+    try:
+        hkey = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\WOW6432Node\Valve\Steam")
+        return winreg.QueryValueEx(hkey, "InstallPath")[0]
+    except:
+        return None
+
 def find_tf2_install_directory():
     system = platform.system()
     
     if system == "Windows":
+        steam_path = get_steam_path()
+        if steam_path:
+            libraryfolders_path = Path(steam_path) / "steamapps" / "libraryfolders.vdf"
+            if libraryfolders_path.exists():
+                with open(libraryfolders_path, 'r') as f:
+                    content = f.read()
+                    library_paths = [Path(line.split('"')[-2]) for line in content.splitlines() if "path" in line]
+                    library_paths.append(Path(steam_path))
+                    
+                    for library in library_paths:
+                        tf2_path = library / "steamapps" / "common" / "Team Fortress 2" / "tf" / "cfg"
+                        if tf2_path.exists():
+                            print(f"TF2 install directory found:\n\"{tf2_path}\"\n")
+                            return tf2_path
+
+        # If not found through Steam libraries, search all drives
         for drive in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
             drive_path = Path(f"{drive}:")
             if drive_path.exists():
@@ -194,10 +219,13 @@ def main():
         print("\nThank you for choosing to use my scripts!\n")
         print("=" * 70)
 
-        input("Press any button to exit...")
-    
     except Exception as e:
         print(f"An error occurred: {e}")
+        print("Detailed error information:")
+        print(traceback.format_exc())  # This will print the full traceback
+
+    finally:
+        input("Press Enter to exit...")  # This ensures the console stays open
 
 if __name__ == "__main__":
     main()
