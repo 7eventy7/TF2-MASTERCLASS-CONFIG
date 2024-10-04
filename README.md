@@ -4,12 +4,6 @@ This project is a collection of advanced and customizable configuration scripts 
 
 To check if a server allows the wait function, type `sv_allow_wait_command` in console while connected to said server. The console will output either, 1, which means wait function is allowed, or 0, which means it is disabled.
 
-# Discord
-Join the Discord community today to share your experiences, get help with your scripts, and collaborate with other TF2 enthusiasts. Our community is dedicated to improving gameplay through creative scripting solutions and offers a supportive environment for both beginners and advanced users.
-### [- PERMANENT INVITE LINK -](https://discord.gg/invite/PGuG2ucZB6)
-
-
-
 # Features
 #### **Comprehensive Documentation**:
 > Each `.cfg` file includes detailed comments explaining what each bind and command does.   
